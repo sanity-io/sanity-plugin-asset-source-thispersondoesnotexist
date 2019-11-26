@@ -1,0 +1,21 @@
+.root {
+  height: calc(100vh - 7rem);
+}
+
+.wrapper {
+  width: 600px;
+  height: 100%;
+}
+
+.image {
+  display: none;
+}
+
+.canvas {
+  display: block;
+  max-height: 600px;
+}
+
+.buttons {
+  margin-bottom: 30px;
+}
