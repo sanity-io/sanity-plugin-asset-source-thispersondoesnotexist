@@ -15,8 +15,7 @@
   "typings": "dist/types/sanity-plugin-asset-source-thispersondoesnotexist.d.ts",
   "files": [
     "dist",
-    "sanity.json",
-    "config.dist.json"
+    "sanity.json"
   ],
   "author": "Sanity.io <hello@sanity.io>",
   "repository": {
