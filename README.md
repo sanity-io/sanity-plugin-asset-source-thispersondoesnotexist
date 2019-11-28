@@ -1,5 +1,7 @@
 # Sanity Asset Source: thispersondoesnotexist.com
 
+This asset source plugin lets you pick [a photo of a person that doesn't exist](https://thispersondoesnotexist.com/) from within the Sanity Studio.
+
 ## Installation
 
 `sanity install asset-source-thispersondoesnotexist`
