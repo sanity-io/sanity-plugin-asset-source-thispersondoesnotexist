@@ -29,10 +29,6 @@ export default class AIFaceAssetSource extends React.Component<Props, State> {
     this.imgRef = React.createRef()
   }
 
-  componentDidMount() {
-    console.log('did mount')
-  }
-
   static defaultProps = {}
 
   state = {
@@ -70,11 +66,13 @@ export default class AIFaceAssetSource extends React.Component<Props, State> {
   handleImageLoaded() {
     const canvas = this.canvasRef.current
     const img = this.imgRef.current
-    if (!canvas || !img) {
-      return
+    if (canvas && img) {
+      const context = canvas.getContext('2d')
+      if (context) {
+        context.drawImage(img, 0, 0)
+        this.setState({ isLoading: false, didLoad: true })
+      }
     }
-    canvas.getContext('2d')?.drawImage(img, 0, 0)
-    this.setState({ isLoading: false, didLoad: true })
   }
 
   render() {
